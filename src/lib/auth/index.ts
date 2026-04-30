@@ -15,7 +15,7 @@ export async function getCurrentUser() {
     await db.user.create({
       data: {
         id: clerkUser.id,
-        email: clerkUser.emailAddresses[0].email,
+        email: clerkUser.emailAddresses[0].emailAddress,
         name: `${clerkUser.firstName ?? ""} ${clerkUser.lastName ?? ""}`.trim() || null,
         image: clerkUser.imageUrl,
       },
