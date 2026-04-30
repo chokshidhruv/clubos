@@ -4,8 +4,10 @@
 
 ClubOS centralizes members, event-specific roles, documents, sponsor outreach, tasks, and historical club knowledge into structured, permission-aware workspaces — replacing the scattered mix of Google Drive folders, group chats, spreadsheets, and tribal knowledge that most student organizations rely on today.
 
-> **Status:** In active MVP development
+> **Status:** In active MVP development 
 > **Stack:** Next.js 14 · TypeScript · PostgreSQL · Prisma · Clerk · Tailwind · shadcn/ui · Vercel
+>
+> - (authentication ✅, connected user to db ✅, workspace view ✅)
 
 ---
 
