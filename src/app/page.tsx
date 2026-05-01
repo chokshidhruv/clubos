@@ -1,6 +1,11 @@
 import Link from "next/link"
+import { currentUser } from "@clerk/nextjs/server"
+import { redirect } from "next/navigation"
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const user = await currentUser()
+  if (user) redirect("/workspaces")
+
   return (
     <div className="min-h-screen bg-white">
       {/* Nav */}
